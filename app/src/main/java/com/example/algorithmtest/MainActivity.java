@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText startPointEditText = findViewById(R.id.startPointEditText);
         EditText endPointEditText = findViewById(R.id.endPointEditText);
-
+        //test
 
     }
 }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText editStartLocation = findViewById(R.id.editStartLocation);
-        EditText editEndLocation = findViewById(R.id.editEndLocation);
+        EditText startPointEditText = findViewById(R.id.startPointEditText);
+        EditText endPointEditText = findViewById(R.id.endPointEditText);
 
 
     }

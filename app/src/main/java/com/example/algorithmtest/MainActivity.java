@@ -93,6 +93,50 @@ public class MainActivity extends AppCompatActivity {
         EditText startPointEditText = findViewById(R.id.startPointEditText);
         EditText endPointEditText = findViewById(R.id.endPointEditText);
 
+        
+    }
 
+    // 출발지 데이터를 넣었을 때, 그룹명을 리턴해주는 함수
+    // input : Edittext 인자, Output : "B", "AE"처럼 그룹알파벳 리턴 형식의 Stirng
+    private String ReturnGroup (EditText targetText) {
+        String groups = "";
+        String target = targetText.getText().toString();
+
+        for (String[] chkPosition : groupAlpha) {
+            if (chkPosition[0].equals(target)) {
+                groups += "A";
+                break;
+            }
+        }
+
+        for (String[] chkPosition : groupBeta) {
+            if (chkPosition[0].equals(target)) {
+                groups += "B";
+                break;
+            }
+        }
+
+        for (String[] chkPosition : groupCharlie) {
+            if (chkPosition[0].equals(target)) {
+                groups += "C";
+                break;
+            }
+        }
+
+        for (String[] chkPosition : groupDelta) {
+            if (chkPosition[0].equals(target)) {
+                groups += "D";
+                break;
+            }
+        }
+
+        for (String[] chkPosition : groupEcho) {
+            if (chkPosition[0].equals(target)) {
+                groups += "E";
+                break;
+            }
+        }
+
+        return groups;
     }
 }

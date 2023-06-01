@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     String[][] groupBeta = {
             {"A", "0"},
+            {"425", "0"},
             {"424", "4"},
             {"423", "8"},
             {"422", "12"},

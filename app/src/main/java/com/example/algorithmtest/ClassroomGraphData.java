@@ -54,6 +54,47 @@ public class ClassroomGraphData {
             this.data.addVertex("410");
             this.data.addVertex("411");
         }
+        {
+            this.data.addVertex("501");
+            this.data.addVertex("502");
+            this.data.addVertex("503");
+            this.data.addVertex("504");
+            this.data.addVertex("505");
+            this.data.addVertex("506");
+            this.data.addVertex("507");
+            this.data.addVertex("508");
+            this.data.addVertex("509");
+            this.data.addVertex("510");
+            this.data.addVertex("511");
+            this.data.addVertex("512");
+            this.data.addVertex("513");
+            this.data.addVertex("514");
+            this.data.addVertex("515");
+            this.data.addVertex("516");
+            this.data.addVertex("517");
+            this.data.addVertex("518");
+            this.data.addVertex("519");
+            this.data.addVertex("520");
+            this.data.addVertex("521");
+            this.data.addVertex("522");
+            this.data.addVertex("523");
+            this.data.addVertex("524");
+            this.data.addVertex("525");
+            this.data.addVertex("526");
+            this.data.addVertex("527");
+            this.data.addVertex("528");
+            this.data.addVertex("529");
+            this.data.addVertex("530");
+            this.data.addVertex("531");
+            this.data.addVertex("532");
+            this.data.addVertex("stairsAlpha");
+            this.data.addVertex("stairsBeta");
+            this.data.addVertex("between5EB");
+            this.data.addVertex("between5FC1");
+            this.data.addVertex("between5FC2");
+            this.data.addVertex("between5FC3");
+            this.data.addVertex("betweenIH");
+        }
         // ...노가다...
 
         // 각 노드의 연결점
@@ -101,6 +142,55 @@ public class ClassroomGraphData {
             this.data.addEdge("408", "409", 7);
             this.data.addEdge("409", "410", 7);
             this.data.addEdge("410", "411", 6);
+        }
+        {
+            this.data.addEdge("526", "527", 5);
+            this.data.addEdge("527", "528", 5);
+            this.data.addEdge("528", "529", 5);
+            this.data.addEdge("529", "530", 6);
+            this.data.addEdge("530", "531", 6);
+            this.data.addEdge("531", "532", 4); // E
+            this.data.addEdge("532", "stairsAlpha", 4);
+            this.data.addEdge("stairsAlpha", "501", 4);
+            this.data.addEdge("501", "502", 6);
+            this.data.addEdge("502", "503", 8);
+            this.data.addEdge("503", "504", 10);
+            this.data.addEdge("504", "505", 12);
+            this.data.addEdge("505", "506", 5);
+            this.data.addEdge("506", "507", 5);
+            this.data.addEdge("526", "525", 5);
+            this.data.addEdge("525", "524", 6);
+            this.data.addEdge("524", "523", 6);
+            this.data.addEdge("523", "522", 4);
+            this.data.addEdge("522", "521", 4);
+            this.data.addEdge("521", "520", 7);
+            this.data.addEdge("520", "519", 3);
+            this.data.addEdge("519", "stairsBeta", 4);
+            this.data.addEdge("stairsBeta", "518", 5);
+            this.data.addEdge("518", "517", 6);
+            this.data.addEdge("517", "516", 4);
+            this.data.addEdge("516", "515", 5);
+            this.data.addEdge("515", "514", 5);
+            this.data.addEdge("514", "513", 3);
+            this.data.addEdge("513", "512", 12);
+            this.data.addEdge("512", "511", 8);
+            this.data.addEdge("531", "between5EB", 10);
+            this.data.addEdge("between5EB", "520", 10);
+            this.data.addEdge("505", "between5FC1", 6);
+            this.data.addEdge("between5FC1", "between5FC2", 8);
+            this.data.addEdge("between5FC2", "between5FC3", 8);
+            this.data.addEdge("between5FC3", "512", 8);
+            this.data.addEdge("507", "508", 7);
+            this.data.addEdge("508", "509", 7);
+            this.data.addEdge("509", "510", 7);
+            this.data.addEdge("510", "511", 6);
+            this.data.addEdge("502", "betweenIH", 10);
+            this.data.addEdge("503", "betweenIH", 10);
+            this.data.addEdge("betweenIH", "515", 10);
+        }
+        {
+            this.data.addEdge("stairsAlpha", "stairsAlpha_1", 20);
+            this.data.addEdge("stairsBeta", "stairsBeta_1", 20);
         }
 
         return this.data;

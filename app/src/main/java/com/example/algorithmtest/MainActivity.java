@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("dataResult" , "Shortest distance from 418 to " + entry.getKey() + ": " + entry.getValue());
                 }
                 */
-                List<String> shortestPath = classInfo.getShortestPath("429", "409");
-                Log.i("dataResult2", "Shortest path from " + "429" + " to " + "409" + ": " + shortestPath);
+                List<String> shortestPath = classInfo.getShortestPath("504", "422");
+                Log.i("dataResult2", "Shortest path from " + "504" + " to " + "422" + ": " + shortestPath);
             }
         });
 

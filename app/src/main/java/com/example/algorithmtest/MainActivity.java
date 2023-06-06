@@ -45,8 +45,28 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("dataResult" , "Shortest distance from 418 to " + entry.getKey() + ": " + entry.getValue());
                 }
                 */
-                List<String> shortestPath = classInfo.getShortestPath("504", "422");
-                Log.i("dataResult2", "Shortest path from " + "504" + " to " + "422" + ": " + shortestPath);
+                String startPosition = startPoint.getText().toString();
+                String endPosition = endPoint.getText().toString();
+
+                List<String> shortestPath = classInfo.getShortestPath(startPosition, endPosition);
+                Log.i("dataResult2", "Shortest path from " + startPosition + " to " + endPosition + ": " + shortestPath);
+
+                // 만약 위치가 하나 차이나거나 차이가 없을 경우 도착 메세지 리턴
+                if (shortestPath.size() <= 2) {
+                    Log.i("dataResult2", "Arrive to target position");
+                    return;
+                }
+
+                NextDirection eee = new NextDirection();
+
+                int finalDirection = eee.getDirection(shortestPath.get(0), shortestPath.get(1));
+                if (finalDirection == 1002) {
+                    Log.i("dataResult2", "Use stair Now");
+                }
+                else if (finalDirection == 1001) {
+                    Log.i("dataResult2", "Error for return");
+                }
+                Log.i("dataResult2", "Direction : " + finalDirection);
             }
         });
 
